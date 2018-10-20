@@ -21,5 +21,4 @@
 1 Maciej data/1_Maciej21.pgm
 1 Maciej data/1_Maciej22.pgm
 1 Maciej data/1_Maciej23.pgm
-1 Maciej data/1_Maciej24.pgm
-1 Maciej data/1_Maciej25.pgm
+
