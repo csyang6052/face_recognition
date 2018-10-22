@@ -17,6 +17,8 @@ find_package(catkin REQUIRED COMPONENTS
   image_transport
 )
 
+find_package(OpenCV2 REQUIRED)
+
 #CFLAGS:
 set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -o0")
 
