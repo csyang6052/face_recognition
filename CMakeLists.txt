@@ -8,7 +8,7 @@ project(face_recognition)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 
-set(OpenCV_DIR /home/ubuntu/opencv-2.4.13)
+set(OpenCV-2.4.13_DIR /home/ubuntu/opencv-2.4.13)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
@@ -20,7 +20,7 @@ find_package(catkin REQUIRED COMPONENTS
   image_transport
 )
 
-find_package(OpenCV REQUIRED)
+find_package(OpenCV-2.4.13 REQUIRED)
 
 #CFLAGS:
 set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -o0")
@@ -111,7 +111,7 @@ catkin_package(
 include_directories(
   ${catkin_INCLUDE_DIRS}
   ${actionlib_msgs_PACKAGE_PATH}
-  ${OpenCV_INCLUDE_DIRS} 
+  ${OpenCV-2.4.13_INCLUDE_DIRS} 
 )
 
 ## Declare cpp libraries: 
@@ -130,8 +130,8 @@ add_dependencies(Fserver ${catkin_EXPORTED_TARGETS})
 add_dependencies(Fclient ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(Fserver ${catkin_LIBRARIES} ${OpenCV_LIBS})
-target_link_libraries(Fclient ${catkin_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(Fserver ${catkin_LIBRARIES} ${OpenCV-2.4.13_LIBS})
+target_link_libraries(Fclient ${catkin_LIBRARIES} ${OpenCV-2.4.13_LIBS})
 
 
 #############
