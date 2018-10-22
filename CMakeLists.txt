@@ -17,7 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   actionlib
   actionlib_msgs
- # cv_bridge
+  cv_bridge
   image_transport
 )
 
@@ -130,8 +130,8 @@ add_dependencies(Fserver ${catkin_EXPORTED_TARGETS})
 add_dependencies(Fclient ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(Fserver ${catkin_LIBRARIES} ${OpenCV_LIBS})
-target_link_libraries(Fclient ${catkin_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(Fserver ${catkin_LIBRARIES})
+target_link_libraries(Fclient ${catkin_LIBRARIES})
 
 message(STATUS "opencv version: ${OpenCV_VERSION}")
 message(STATUS "opencv lib: ${OpenCV_LIBS}")
