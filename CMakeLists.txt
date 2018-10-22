@@ -17,7 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   actionlib
   actionlib_msgs
- # cv_bridge
+  cv_bridge
   image_transport
 )
 
