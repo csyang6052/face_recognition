@@ -133,10 +133,10 @@ add_dependencies(Fclient ${catkin_EXPORTED_TARGETS})
 target_link_libraries(Fserver ${catkin_LIBRARIES} ${OpenCV_LIBS})
 target_link_libraries(Fclient ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
-message(STATUS "opencv version: ${openCV_VERSION}")
-message(STATUS "opencv lib: ${openCV_LIBS}")
-message(STATUS "opencv include dir: ${openCV_INCLUDE_DIRS}")
-message(STATUS "opencv config path: ${openCV_CONFIG_PATH}")
+message(STATUS "opencv version: ${OpenCV_VERSION}")
+message(STATUS "opencv lib: ${OpenCV_LIBS}")
+message(STATUS "opencv include dir: ${OpenCV_INCLUDE_DIRS}")
+message(STATUS "opencv config path: ${OpenCV_CONFIG_PATH}")
 
 #############
 ## Install ##
