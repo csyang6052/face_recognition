@@ -21,7 +21,6 @@ find_package(catkin REQUIRED COMPONENTS
   image_transport
 )
 
-find_package(OpenCV REQUIRED)
 
 #CFLAGS:
 set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -o0")
@@ -134,6 +133,10 @@ add_dependencies(Fclient ${catkin_EXPORTED_TARGETS})
 target_link_libraries(Fserver ${catkin_LIBRARIES} ${OpenCV_LIBS})
 target_link_libraries(Fclient ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
+message(STATUS "opencv version: ${openCV_VERSION}")
+message(STATUS "opencv lib: ${openCV_LIBS}")
+message(STATUS "opencv include dir: ${openCV_INCLUDE_DIRS}")
+message(STATUS "opencv config path: ${openCV_CONFIG_PATH}")
 
 #############
 ## Install ##
