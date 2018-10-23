@@ -105,7 +105,7 @@ catkin_package(
 include_directories(
   ${catkin_INCLUDE_DIRS}
   ${actionlib_msgs_PACKAGE_PATH}
-  # ${OpenCV_INCLUDE_DIRS} 
+  ${OpenCV_INCLUDE_DIRS} 
 )
 
 ## Declare cpp libraries: 
