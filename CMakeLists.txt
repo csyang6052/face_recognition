@@ -8,16 +8,13 @@ project(face_recognition)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 
-set(OpenCV_DIR /usr/local/share/OpenCV)
-find_package(OpenCV REQUIRED)
-
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   message_generation
   std_msgs
   actionlib
   actionlib_msgs
- # cv_bridge
+  cv_bridge
   image_transport
 )
 
